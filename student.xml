@@ -1,0 +1,19 @@
+<student>
+    <firstName>Sivakumar Reddy</firstName>
+    <lastName>Mettukuru</lastName>
+    <dob>01/01/01</dob>
+    <addresses>
+        <address type="temporary">
+            <type>temporary</type>
+            <doorNo>123-526</doorNo>
+            <streetName>Gandhi Nagar</streetName>
+            <city>Hyderabad</city>
+        </address>
+        <address type="permanent">
+            <type>permanent</type>
+            <doorNo>123-526</doorNo>
+            <streetName>Gandhi Nagar</streetName>
+            <city>Hyderabad</city>
+        </address>
+    </addresses>
+</student>

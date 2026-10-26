@@ -1,0 +1,17 @@
+- id: 1001
+  name: "Sivakumar Reddy"
+  lastName: "M"
+  addresses:
+  - type: permanent
+    doorNo: "5-123"
+    streetName: "Gandhi Nagar"
+    city: "Hyderabad"
+
+  - type: temporary
+    doorNo: "5-123"
+    streetName: "Gandhi Nagar"
+    city: "Hyderabad"
+  skills:
+    OS: Linux
+    IDE: Vscode
+    scripting: "shell and python"

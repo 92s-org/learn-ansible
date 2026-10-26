@@ -1,0 +1,24 @@
+{
+    "id": 1001,
+    "firstName": "Sivakumar Reddy",
+    "lastName": "M",
+    "addresses": [
+        {
+            "type": "temporary",
+            "doorNo": "1-589",
+            "streetName": "Gandhi Nagar",
+            "city": "Hyderabad"
+        },
+        {
+            "type": "permanent",
+            "doorNo": "1-589",
+            "streetName": "Gandhi Nagar",
+            "city": "Hyderabad"
+        }
+    ],
+    "skills":{
+        "OS": "Linux",
+        "IDE": "Vscode",
+        "scripting": "shell and python"
+    }
+}
