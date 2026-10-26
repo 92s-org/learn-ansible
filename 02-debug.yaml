@@ -1,0 +1,7 @@
+- name: print debug statement
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: print a message
+    debug:
+      msg: "Hello World !"
