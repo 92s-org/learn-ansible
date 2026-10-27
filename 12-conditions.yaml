@@ -1,5 +1,5 @@
 - name: check number of live sessions
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     live_sessions: 4
