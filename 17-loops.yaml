@@ -1,5 +1,6 @@
 - name: install pacakges
-  hosts: frontend
+  hosts: localhost
+  connection: local
   become: yes
   tasks:
   - name: install pacakges
