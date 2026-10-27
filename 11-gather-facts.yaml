@@ -1,0 +1,19 @@
+- name: gather facts demo
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+  - name: print system information
+    debug:
+      msg: |
+        hostname: {{ ansible_facts['hostname'] }}
+        os: {{ ansible_facts['distribution'] }} {{ ansible_facts['distribution_version'] }}
+        os_family: {{ ansible_facts['os_family'] }}
+        kernel: {{ ansible_facts['kernel'] }}
+        architecture: {{ ansible_facts['architecture'] }}
+        private_ip: {{ ansible_facts['default_ipv4']['address'] }}
+        cpus: {{ ansible_facts['processor_vcpus'] }}
+        memory_mb: {{ ansible_facts['memtotal_mb'] }}
+        free_memory_mb: {{ ansible_facts['memfree_mb'] }}
+        python: {{ ansible_facts['python_version'] }}
+        user: {{ ansible_facts['user_id'] }}
