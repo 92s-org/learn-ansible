@@ -1,0 +1,27 @@
+- name: course information
+  hosts: local
+  connection: local
+  vars:
+    course: "DevSecOps with AIOps" # String
+    duration_in_hrs: 150 # int/number
+    fee_in_lakhs: 0.45 # float
+    is_live_sessions: true # bool
+    certificate: null # null (no value)
+    topics: # list
+    - linux
+    - shell
+    - ansible
+    more_details: # map
+      months: 5
+      trainer: "Sivakumar Reddy"
+  tasks:
+  - name: print information
+    debug:
+      msg: |
+        name: {{ course }} ({{ course | type_debug }})
+        duration: {{ duration_in_hrs }} ({{ duration_in_hrs | type_debug }})
+        fee: {{ fee_in_lakhs }} ({{ fee_in_lakhs | type_debug }})
+        is_it_live: {{ is_live_sessions }} ({{ is_live_sessions | type_debug }})
+        certificate: {{ certificate }} ({{ certificate | type_debug }})
+        topics: {{ topics }} ({{ topics | type_debug }})
+        more_details: {{ more_details }} ({{ more_details | type_debug }})
